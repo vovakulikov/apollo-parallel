@@ -71,6 +71,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './web/index.html'
     }),
-    new ForkTsCheckerWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      logger: {
+        devServer: false
+      }
+    }),
   ]
 };

@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: wheat;
+}
+
+
+.root-class :global {
+
+  .element {
+    background: red;
+  }
+
+  .some-class {
+    background: yellow;
+  }
+
+  ul {
+    display: flex;
+  }
+}
